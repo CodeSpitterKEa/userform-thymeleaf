@@ -23,4 +23,12 @@ public class UserService {
     }
 
 
+    public User getUserById(int userId) {
+        return userRepository.getUserById(userId);
+    }
+
+    public User updateUser(User user) {
+        return userRepository.updateUsers(user);
+    }
+
 }
